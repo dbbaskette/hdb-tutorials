@@ -1,0 +1,1 @@
+\COPY faa.d_distance_groups FROM 'L_DISTANCE_GROUP_250.csv'  CSV HEADER LOG ERRORS INTO faa.faa_load_errors KEEP SEGMENT REJECT LIMIT 50 ROWS;
