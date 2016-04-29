@@ -22,19 +22,19 @@ DepTime integer,
 DepDelay float8, -- cast from numeric
 DepDelayMinutes float8, -- cast from numeric
 DepartureDelayGroups smallint, --FK to d_delay_groups
-TaxiOut smallint, -- cast from numeric
+TaxiOut float, -- cast from numeric
 WheelsOff text,
 WheelsOn text,
-TaxiIn smallint, -- cast from numeric
+TaxiIn float, -- cast from numeric
 CRSArrTime text,
-ArrTime text,
+ArrTime integer,
 ArrDelay float8, -- cast from numeric
 ArrDelayMinutes float8, -- cast from numeric
 ArrivalDelayGroups smallint, -- FK to d_delay_groups
-Cancelled smallint, -- cast from numeric
+Cancelled float, -- cast from numeric
 CancellationCode text, -- FK to d_cancellation_codes
-Diverted smallint, -- cast from numeric
-CRSElapsedTime integer, -- cast from numeric
+Diverted float, -- cast from numeric
+CRSElapsedTime float, -- cast from numeric
 ActualElapsedTime float8, -- cast from numeric
 AirTime float8, -- cast from numeric
 Flights smallint, -- cast from numeric, always one

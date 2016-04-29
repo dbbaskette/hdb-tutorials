@@ -34,7 +34,7 @@ WheelsOff string,
 WheelsOn string,
 TaxiIn float,
 CRSArrTime string,
-ArrTime string,
+ArrTime int,
 ArrDelay float,
 ArrDelayMinutes float,
 ArrDel15 float,
@@ -95,8 +95,7 @@ Div5TailNum string,
 trailer smallint
 
 )
-ROW FORMAT DELIMITED
-    FIELDS TERMINATED BY ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
     STORED AS TEXTFILE
     location '/hdb-tutorials/otp'
 tblproperties("skip.header.line.count"="1"); 
