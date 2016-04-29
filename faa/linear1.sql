@@ -1,2 +1,2 @@
-select (madlib.linregr(arrdelayminutes, array[1,distance])).* from faa.otp_c;
+select (madlib.linregr(arrdelayminutes, array[1,distance])).* from faa.otp;
 

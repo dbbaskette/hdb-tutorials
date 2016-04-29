@@ -4,7 +4,7 @@ SELECT (madlib.one_way_anova (
          ELSE NULL
     END,
     arrdelay
-)).* FROM faa.otp_c;
+)).* FROM faa.otp;
 
 SELECT (madlib.one_way_anova (
     CASE WHEN origin = 'ORD' THEN 1
@@ -12,7 +12,7 @@ SELECT (madlib.one_way_anova (
          ELSE NULL
     END,
     arrdelay
-)).* FROM faa.otp_c;
+)).* FROM faa.otp;
 
 SELECT (madlib.one_way_anova (
     CASE WHEN carrier = 'DL' and origin = 'ATL' THEN 1
@@ -21,7 +21,7 @@ SELECT (madlib.one_way_anova (
          ELSE NULL
     END,
     arrdelay
-)).* FROM faa.otp_c;
+)).* FROM faa.otp;
 
 SELECT (madlib.one_way_anova (
     CASE WHEN carrier = 'DL' and origin = 'ATL' THEN 1
@@ -29,5 +29,5 @@ SELECT (madlib.one_way_anova (
          ELSE NULL
     END,
     arrdelay
-)).* FROM faa.otp_c;
+)).* FROM faa.otp;
 
